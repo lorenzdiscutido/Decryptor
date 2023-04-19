@@ -15,3 +15,4 @@ if encrypted_message[i] == "+":
 if encrypted_message[i] == "!":
     message += "u"
 #Print the message
+print(message)
