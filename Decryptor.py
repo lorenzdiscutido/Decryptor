@@ -4,15 +4,15 @@ message = ""
 #Check for the character of the message
 for i in range(len(encrypted_message)):
 #Decrypt the message
-if encrypted_message[i] == "*":
-    message += "a"
-if encrypted_message[i] == "&":
-    message += "e"
-if encrypted_message[i] == "#":
-    message += "i"
-if encrypted_message[i] == "+":
-    message += "o"
-if encrypted_message[i] == "!":
-    message += "u"
+    if encrypted_message[i] == "*":
+        message += "a"
+    elif encrypted_message[i] == "&":
+        message += "e"
+    elif encrypted_message[i] == "#":
+        message += "i"
+    elif encrypted_message[i] == "+":
+        message += "o"
+    elif encrypted_message[i] == "!":
+        message += "u"
 #Print the message
 print(message)
