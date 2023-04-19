@@ -1,8 +1,10 @@
 #Ask user to input encrypted message
 encrypted_message = input(str("Please enter an encrypted message"))
 message = ""
+
 #Check for the character of the message
 for i in range(len(encrypted_message)):
+
 #Decrypt the message
     if encrypted_message[i] == "*":
         message += "a"
@@ -16,5 +18,6 @@ for i in range(len(encrypted_message)):
         message += "u"
     else:
         message += encrypted_message[i]
+        
 #Print the message
 print(message)
