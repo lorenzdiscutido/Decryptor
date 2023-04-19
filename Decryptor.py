@@ -14,5 +14,7 @@ for i in range(len(encrypted_message)):
         message += "o"
     elif encrypted_message[i] == "!":
         message += "u"
+    else:
+        message += encrypted_message[i]
 #Print the message
 print(message)
